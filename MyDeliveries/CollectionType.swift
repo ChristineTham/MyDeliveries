@@ -12,7 +12,9 @@ enum CollectionType: String {
     case packages = "Packages"
     case none = ""
 
-    static let all = [
-        deliveryStatus, packages,
-    ]
+//    static let all = [
+//        deliveryStatus, packages,
+//    ]
+    static let all = [ packages ]
+
 }

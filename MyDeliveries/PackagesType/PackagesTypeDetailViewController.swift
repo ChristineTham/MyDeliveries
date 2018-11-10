@@ -116,7 +116,9 @@ class PackagesTypeDetailViewController: FUIFormTableViewController, SAPFioriLoad
             let destinationStoryBoard = UIStoryboard(name: "DeliveryStatusType", bundle: nil)
             var masterViewController = destinationStoryBoard.instantiateViewController(withIdentifier: "DeliveryStatusTypeMaster")
             func loadProperty(_ completionHandler: @escaping ([DeliveryStatusType]?, Error?) -> Void) {
-                self.deliveryService.loadProperty(PackagesType.deliveryStatus, into: self.entity) { error in
+                let sortQuery = DataQuery().orderBy(DeliveryStatusType.deliveryTimestamp, .descending)
+                self.deliveryService.loadProperty(PackagesType.deliveryStatus, into: self.entity, query: sortQuery) { error in
+//                self.deliveryService.loadProperty(PackagesType.deliveryStatus, into: self.entity) { error in
                     self.hideFioriLoadingIndicator()
                     if let error = error {
                         completionHandler(nil, error)

@@ -33,7 +33,14 @@ class DeliveryStatusTypeMasterViewController: FUIFormTableViewController, SAPFio
         self.tableView.addSubview(self.refreshControl!)
         // Cell height settings
         self.tableView.rowHeight = UITableView.automaticDimension
-        self.tableView.estimatedRowHeight = 98
+//        self.tableView.estimatedRowHeight = 98
+        
+        self.tableView.register(FUITimelineCell.self, forCellReuseIdentifier:"FUITimelineCell")
+        self.tableView.register(FUITimelineMarkerCell.self, forCellReuseIdentifier: "FUITimelineMarkerCell")
+        self.tableView.estimatedRowHeight = 44
+        self.tableView.backgroundColor = UIColor.preferredFioriColor(forStyle: .backgroundBase)
+        self.tableView.separatorStyle = .none
+        
         self.updateTable()
     }
 
@@ -60,11 +67,62 @@ class DeliveryStatusTypeMasterViewController: FUIFormTableViewController, SAPFio
         return true
     }
 
+//    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let deliverystatustype = self.entities[indexPath.row]
+//        let cell = CellCreationHelper.objectCellWithNonEditableContent(tableView: tableView, indexPath: indexPath, key: "DeliveryStatusID", value: "\(deliverystatustype.deliveryStatusID!)")
+//        return cell
+//    }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let deliverystatustype = self.entities[indexPath.row]
-        let cell = CellCreationHelper.objectCellWithNonEditableContent(tableView: tableView, indexPath: indexPath, key: "DeliveryStatusID", value: "\(deliverystatustype.deliveryStatusID!)")
+        let deliveryStatusType = self.entities[indexPath.row]
+        if deliveryStatusType.selectable != 0 {
+            return timelineCell(representing: deliveryStatusType, forRowAt: indexPath)
+        } else {
+            return timelineMarkerCell(representing: deliveryStatusType, forRowAt: indexPath)
+        }
+    }
+    
+    private lazy var dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MM/dd HH:mm"
+        return formatter
+    }()
+    
+    private func timelineMarkerCell(representing deliveryStatusType: DeliveryStatusType, forRowAt indexPath: IndexPath) -> FUITimelineMarkerCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FUITimelineMarkerCell", for: indexPath) as! FUITimelineMarkerCell
+        
+        cell.nodeImage = nodeImage(for: deliveryStatusType)
+        cell.showLeadingTimeline = indexPath.row != 0
+        cell.showTrailingTimeline = indexPath.row != (self.entities.count - 1)
+        cell.eventText = dateFormatter.string(from: deliveryStatusType.deliveryTimestamp!.utc())
+        cell.titleText = deliveryStatusType.status
+        
         return cell
     }
+    
+    private func timelineCell(representing deliveryStatusType: DeliveryStatusType, forRowAt indexPath: IndexPath) -> FUITimelineCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FUITimelineCell", for: indexPath) as! FUITimelineCell
+        
+        cell.nodeImage = nodeImage(for: deliveryStatusType)
+        cell.eventText = dateFormatter.string(from: deliveryStatusType.deliveryTimestamp!.utc())
+        cell.headlineText = deliveryStatusType.status
+        cell.subheadlineText = deliveryStatusType.location
+        
+        return cell
+    }
+    
+    private func nodeImage(for deliveryStatusType: DeliveryStatusType) -> UIImage {
+        switch deliveryStatusType.statusType! {
+        case "start"    : return FUITimelineNode.start
+        case "inactive" : return FUITimelineNode.inactive
+        case "complete" : return FUITimelineNode.complete
+        case "earlyEnd" : return FUITimelineNode.earlyEnd
+        case "end"      : return FUITimelineNode.end
+        default         : return FUITimelineNode.open
+        }
+    }
+    
+
 
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle != .delete {
