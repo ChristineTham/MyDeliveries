@@ -39,6 +39,7 @@
 		7A26CA1C1F31BA8800B156B6 /* CellCreationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A26CA1B1F31BA8800B156B6 /* CellCreationHelper.swift */; };
 		7A9F6FF61F3883D3000A1815 /* SAPFioriLoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9F6FF51F3883D3000A1815 /* SAPFioriLoadingIndicator.swift */; };
 		87CD42CA2196F07200723D26 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CD42C92196F07200723D26 /* ChartViewController.swift */; };
+		87CD42CC2196F3D400723D26 /* CustomTheme.nss in Resources */ = {isa = PBXBuildFile; fileRef = 87CD42CB2196F3D400723D26 /* CustomTheme.nss */; };
 		88D9B24EB4EC11C95433BE70 /* DeliveryStatusTypeMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28CCFCC7AA1563179AFA66C /* DeliveryStatusTypeMasterViewController.swift */; };
 		A0011030216E797F3FBD3C25 /* DeliveryStatusType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24B41096A7146A74A8F90E1 /* DeliveryStatusType.swift */; };
 		AF5A5E06BAB347CEB2C52BD4 /* PackagesType.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E2964ACA917BEA62FC43255 /* PackagesType.storyboard */; };
@@ -96,6 +97,7 @@
 		7A9F6FF51F3883D3000A1815 /* SAPFioriLoadingIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAPFioriLoadingIndicator.swift; sourceTree = "<group>"; };
 		7BB92C8F8675C5969BD04FCE /* Base */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/PackagesType.storyboard; sourceTree = "<group>"; };
 		87CD42C92196F07200723D26 /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+		87CD42CB2196F3D400723D26 /* CustomTheme.nss */ = {isa = PBXFileReference; lastKnownFileType = text; path = CustomTheme.nss; sourceTree = "<group>"; };
 		A424CD2C0E23059893F8A4EE /* PackagesTypeMasterViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PackagesTypeMasterViewController.swift; path = PackagesType/PackagesTypeMasterViewController.swift; sourceTree = "<group>"; };
 		B24B41096A7146A74A8F90E1 /* DeliveryStatusType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeliveryStatusType.swift; path = "Proxy Classes/com.sap.tutorials.demoapp.MyDeliveries/public/DeliveryStatusType.swift"; sourceTree = "<group>"; };
 		B2CB46E1E2F09915870E6175 /* DeliveryServiceMetadataParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeliveryServiceMetadataParser.swift; path = "Proxy Classes/com.sap.tutorials.demoapp.MyDeliveries/internal/DeliveryServiceMetadataParser.swift"; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 		7A1315AC1D4B982000A5DA56 = {
 			isa = PBXGroup;
 			children = (
+				87CD42CB2196F3D400723D26 /* CustomTheme.nss */,
 				7A16F06C1FD1B3C700D2FABD /* README.md */,
 				7A1315B71D4B982000A5DA56 /* MyDeliveries */,
 				7A1315B61D4B982000A5DA56 /* Products */,
@@ -322,6 +325,7 @@
 			files = (
 				7A16F06D1FD1B3C700D2FABD /* README.md in Resources */,
 				7A1315C51D4B982000A5DA56 /* LaunchScreen.storyboard in Resources */,
+				87CD42CC2196F3D400723D26 /* CustomTheme.nss in Resources */,
 				12D066CF1F4DDB0E0075EBA4 /* (null) in Resources */,
 				7A1315C21D4B982000A5DA56 /* Assets.xcassets in Resources */,
 				CBCA7A991E3778A9001AF49E /* Main.storyboard in Resources */,

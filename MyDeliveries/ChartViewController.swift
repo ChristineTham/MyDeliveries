@@ -18,6 +18,7 @@ class ChartViewController: FUIChartFloorplanViewController {
         
         title = "Waiting Time"
         chartView.chartType = .bar
+        chartView.series.colors = [UIColor(hexString: "#3A835B")]
         
         chartView.dataSource = self
         summaryView.dataSource = self

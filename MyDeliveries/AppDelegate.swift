@@ -20,6 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     var deliveryService: DeliveryService<OnlineODataProvider>!
 
     func application(_: UIApplication, didFinishLaunchingWithOptions _: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        NUISettings.initWithStylesheet(name: "CustomTheme")
+
         // Set a FUIInfoViewController as the rootViewController, since there it is none set in the Main.storyboard
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window!.rootViewController = FUIInfoViewController.createSplashScreenInstanceFromStoryboard()
