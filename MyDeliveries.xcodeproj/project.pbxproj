@@ -14,7 +14,7 @@
 		128604DA1E55B41600C698B5 /* SAPCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 128604D91E55B41600C698B5 /* SAPCommon.framework */; };
 		128604DB1E55B43B00C698B5 /* SAPCommon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 128604D91E55B41600C698B5 /* SAPCommon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		128B53061F8E667000E64DF6 /* SnapshotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128B53051F8E667000E64DF6 /* SnapshotViewController.swift */; };
-		12D066CF1F4DDB0E0075EBA4 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
+		12D066CF1F4DDB0E0075EBA4 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		12E07EF21E96851800460A94 /* CollectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E07EF11E96851800460A94 /* CollectionType.swift */; };
 		12E84FE31F4ECC4A0061C99E /* SAPFioriFlows.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12E84FE21F4ECC3E0061C99E /* SAPFioriFlows.framework */; };
 		12E84FE41F4ECC4A0061C99E /* SAPFioriFlows.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 12E84FE21F4ECC3E0061C99E /* SAPFioriFlows.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -24,7 +24,7 @@
 		511B301E9ED70F6CECE4CA43 /* DeliveryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5118DEA99656F9015856E820 /* DeliveryService.swift */; };
 		55DF079BA06DCF3C7FA7B5AD /* DeliveryServiceStaticResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D3EDA3D29A42A9621DAA20 /* DeliveryServiceStaticResolver.swift */; };
 		5DB248BE6F6387D7F0BFD35A /* DeliveryServiceMetadataText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D3E063E9B2ED2B09485707 /* DeliveryServiceMetadataText.swift */; };
-		755533991F25FD330017A1BC /* BuildFile in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		755533991F25FD330017A1BC /* (null) in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		756192211DBE1A99007F562C /* SAPOData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7561921A1DBE1A90007F562C /* SAPOData.framework */; };
 		756192221DBE1A99007F562C /* SAPOData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7561921A1DBE1A90007F562C /* SAPOData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7569DA531E5C717C00C5D751 /* SAPFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7569DA511E5C716A00C5D751 /* SAPFoundation.framework */; };
@@ -38,6 +38,7 @@
 		7A16F06D1FD1B3C700D2FABD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7A16F06C1FD1B3C700D2FABD /* README.md */; };
 		7A26CA1C1F31BA8800B156B6 /* CellCreationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A26CA1B1F31BA8800B156B6 /* CellCreationHelper.swift */; };
 		7A9F6FF61F3883D3000A1815 /* SAPFioriLoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9F6FF51F3883D3000A1815 /* SAPFioriLoadingIndicator.swift */; };
+		87CD42CA2196F07200723D26 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CD42C92196F07200723D26 /* ChartViewController.swift */; };
 		88D9B24EB4EC11C95433BE70 /* DeliveryStatusTypeMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28CCFCC7AA1563179AFA66C /* DeliveryStatusTypeMasterViewController.swift */; };
 		A0011030216E797F3FBD3C25 /* DeliveryStatusType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24B41096A7146A74A8F90E1 /* DeliveryStatusType.swift */; };
 		AF5A5E06BAB347CEB2C52BD4 /* PackagesType.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E2964ACA917BEA62FC43255 /* PackagesType.storyboard */; };
@@ -58,7 +59,7 @@
 				7569DA541E5C717C00C5D751 /* SAPFoundation.framework in Embed Frameworks */,
 				12E84FE41F4ECC4A0061C99E /* SAPFioriFlows.framework in Embed Frameworks */,
 				128604DB1E55B43B00C698B5 /* SAPCommon.framework in Embed Frameworks */,
-				755533991F25FD330017A1BC /* BuildFile in Embed Frameworks */,
+				755533991F25FD330017A1BC /* (null) in Embed Frameworks */,
 				756192221DBE1A99007F562C /* SAPOData.framework in Embed Frameworks */,
 				759BA2721E6821AF001C32BA /* SAPFiori.framework in Embed Frameworks */,
 			);
@@ -76,7 +77,7 @@
 		12E84FE21F4ECC3E0061C99E /* SAPFioriFlows.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SAPFioriFlows.framework; sourceTree = "<group>"; };
 		22D3EDA3D29A42A9621DAA20 /* DeliveryServiceStaticResolver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeliveryServiceStaticResolver.swift; path = "Proxy Classes/com.sap.tutorials.demoapp.MyDeliveries/internal/DeliveryServiceStaticResolver.swift"; sourceTree = "<group>"; };
 		24C544E1B64626A6E04E58B2 /* PackagesType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PackagesType.swift; path = "Proxy Classes/com.sap.tutorials.demoapp.MyDeliveries/public/PackagesType.swift"; sourceTree = "<group>"; };
-		2B46C56A79786B841BDA15BF /* Base */ = {isa = PBXFileReference; includeInIndex = ""; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/DeliveryStatusType.storyboard; sourceTree = "<group>"; };
+		2B46C56A79786B841BDA15BF /* Base */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/DeliveryStatusType.storyboard; sourceTree = "<group>"; };
 		2E495BABFA729234BD70A9A1 /* PackagesTypeDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PackagesTypeDetailViewController.swift; path = PackagesType/PackagesTypeDetailViewController.swift; sourceTree = "<group>"; };
 		342306F322F74A7BB7657E80 /* DeliveryServiceFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeliveryServiceFactory.swift; path = "Proxy Classes/com.sap.tutorials.demoapp.MyDeliveries/internal/DeliveryServiceFactory.swift"; sourceTree = "<group>"; };
 		5118DEA99656F9015856E820 /* DeliveryService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeliveryService.swift; path = "Proxy Classes/com.sap.tutorials.demoapp.MyDeliveries/public/DeliveryService.swift"; sourceTree = "<group>"; };
@@ -93,7 +94,8 @@
 		7A16F06C1FD1B3C700D2FABD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7A26CA1B1F31BA8800B156B6 /* CellCreationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellCreationHelper.swift; sourceTree = "<group>"; };
 		7A9F6FF51F3883D3000A1815 /* SAPFioriLoadingIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAPFioriLoadingIndicator.swift; sourceTree = "<group>"; };
-		7BB92C8F8675C5969BD04FCE /* Base */ = {isa = PBXFileReference; includeInIndex = ""; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/PackagesType.storyboard; sourceTree = "<group>"; };
+		7BB92C8F8675C5969BD04FCE /* Base */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/PackagesType.storyboard; sourceTree = "<group>"; };
+		87CD42C92196F07200723D26 /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		A424CD2C0E23059893F8A4EE /* PackagesTypeMasterViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PackagesTypeMasterViewController.swift; path = PackagesType/PackagesTypeMasterViewController.swift; sourceTree = "<group>"; };
 		B24B41096A7146A74A8F90E1 /* DeliveryStatusType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeliveryStatusType.swift; path = "Proxy Classes/com.sap.tutorials.demoapp.MyDeliveries/public/DeliveryStatusType.swift"; sourceTree = "<group>"; };
 		B2CB46E1E2F09915870E6175 /* DeliveryServiceMetadataParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeliveryServiceMetadataParser.swift; path = "Proxy Classes/com.sap.tutorials.demoapp.MyDeliveries/internal/DeliveryServiceMetadataParser.swift"; sourceTree = "<group>"; };
@@ -242,6 +244,7 @@
 				9E2964ACA917BEA62FC43255 /* PackagesType.storyboard */,
 				A424CD2C0E23059893F8A4EE /* PackagesTypeMasterViewController.swift */,
 				2E495BABFA729234BD70A9A1 /* PackagesTypeDetailViewController.swift */,
+				87CD42C92196F07200723D26 /* ChartViewController.swift */,
 			);
 			name = PackagesType;
 			sourceTree = "<group>";
@@ -319,7 +322,7 @@
 			files = (
 				7A16F06D1FD1B3C700D2FABD /* README.md in Resources */,
 				7A1315C51D4B982000A5DA56 /* LaunchScreen.storyboard in Resources */,
-				12D066CF1F4DDB0E0075EBA4 /* BuildFile in Resources */,
+				12D066CF1F4DDB0E0075EBA4 /* (null) in Resources */,
 				7A1315C21D4B982000A5DA56 /* Assets.xcassets in Resources */,
 				CBCA7A991E3778A9001AF49E /* Main.storyboard in Resources */,
 				1277F7611F8E66AF0060AF58 /* SAPLogo@2x.png in Resources */,
@@ -343,6 +346,7 @@
 				75AC42D41DAF824D00B445FF /* CollectionsViewController.swift in Sources */,
 				7A1315B91D4B982000A5DA56 /* AppDelegate.swift in Sources */,
 				B3DC85FFC01335102DC7E802 /* PackagesType.swift in Sources */,
+				87CD42CA2196F07200723D26 /* ChartViewController.swift in Sources */,
 				094BE4F383CF588BAA96FAD5 /* DeliveryServiceMetadata.swift in Sources */,
 				511B301E9ED70F6CECE4CA43 /* DeliveryService.swift in Sources */,
 				A0011030216E797F3FBD3C25 /* DeliveryStatusType.swift in Sources */,
